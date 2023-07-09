@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AndroidWidgetExample</string>
+    <string name="small_water">200ml</string>
+    <string name="medium_water">400ml</string>
+    <string name="large_water">600ml</string>
+    <string name="total_result">Hoje você bebeu %d ml</string>
 </resources>
