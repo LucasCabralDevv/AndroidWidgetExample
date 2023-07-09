@@ -4,4 +4,7 @@
     <string name="medium_water">400ml</string>
     <string name="large_water">600ml</string>
     <string name="total_result">Hoje você bebeu %d ml</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
 </resources>

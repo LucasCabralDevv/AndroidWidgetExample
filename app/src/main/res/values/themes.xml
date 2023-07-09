@@ -16,7 +16,8 @@
 
     <style name="Button.CustomStyle.WaterButton" parent="Widget.AppCompat.Button.Colored">
         <item name="android:backgroundTint">@color/purple_500</item>
-        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Widget.Button.Colored</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Widget.Button.Colored
+        </item>
         <item name="android:textSize">16sp</item>
         <item name="android:layout_margin">4dp</item>
         <item name="android:textColor">@color/white</item>
