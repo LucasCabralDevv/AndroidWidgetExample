@@ -4,6 +4,7 @@ import android.appwidget.AppWidgetManager
 import android.appwidget.AppWidgetProvider
 import android.content.Context
 import android.widget.RemoteViews
+import com.example.androidwidgetexample.GlassPreferences
 import com.example.androidwidgetexample.R
 
 /**
@@ -35,9 +36,10 @@ internal fun updateAppWidget(
     appWidgetManager: AppWidgetManager,
     appWidgetId: Int
 ) {
-    val widgetText = context.getString(R.string.appwidget_text)
-    // Construct the RemoteViews object
-    //val views = RemoteViews(context.packageName, R.layout.main_widget)
+    val prefs = GlassPreferences(context)
+    val ml = prefs.fetch()
+    val views = RemoteViews(context.packageName, R.layout.main_widget)
+    views.setTextViewText(R.id.widget_total_result, context.getString(R.string.total_result, ml))
     //views.setTextViewText(R.id.appwidget_text, widgetText)
 
     // Instruct the widget manager to update the widget
